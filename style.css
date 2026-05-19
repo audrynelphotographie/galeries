@@ -596,27 +596,15 @@ img {
 }
 /* Gukuraho zoom no kugumisa urubuga kuri 100% mu ma telefone yose */
 @media (max-width: 768px) {
-    html, body {
-        zoom: 100%; 
-        -webkit-transform: none;
-        transform: none;
-        
-        /* Ibi bintu bibiri ni ingenzi cyane kuri 100%: 
-           Biringira ko nta kintu na kimwe kirenga ifuremu y'izina rya telefone (No horizontal scrolling) */
-        width: 100%;
-        overflow-x: hidden;
-    }
-}
-@media (max-width: 768px) {
-    /* 1. Gabanya umutwe wose (Header) usesuye ube kuri 80% */
+    /* 1. Gabanya umutwe wose (Header) ube kuri 75% */
     header {
-        zoom: 80% !important;
-        -webkit-transform: scale(0.80) !important;
-        transform: scale(0.80) !important;
+        zoom: 75% !important;
+        -webkit-transform: scale(0.75) !important;
+        transform: scale(0.75) !important;
         transform-origin: top center !important;
         width: 100% !important;
         display: flex !important;
-        flex-direction: column !important; /* Logo n'izina hejuru, menu hasi */
+        flex-direction: column !important; /* Logo hejuru, menu n'amaboton hasi */
         align-items: center !important;
         gap: 10px !important;
         padding: 10px 0 !important;
@@ -637,10 +625,10 @@ img {
 
     /* 3. Utujambo twa menu ubwatwo */
     nav ul li a, .nav-links a {
-        font-size: 12px !important; /* Ingano nziza isomeka neza kuri 80% zoom */
+        font-size: 13px !important; /* Ingano nziza isomeka neza cyane kuri 75% zoom */
         text-transform: uppercase !important;
         letter-spacing: 0.5px !important;
-        white-space: nowrap !important; /* Birinda ko ijambo rimwe ryicamo kabiri */
+        white-space: nowrap !important; /* Birinda ko ijambo ryicamo kabiri nabi */
     }
 
     /* 4. Ya buto ya ESPACE CLIENT - Ize hasi y'amagambo yisanzuye */
@@ -648,7 +636,7 @@ img {
         display: inline-block !important;
         margin-top: 5px !important;
         padding: 6px 12px !important;
-        font-size: 12px !important;
+        font-size: 13px !important;
         text-align: center !important;
         width: auto !important;
     }
