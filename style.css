@@ -567,3 +567,43 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
     font-size: 0.75rem;
   }
 }
+.hero-section {
+    width: 100%;
+    min-height: 100vh; /* Ijyane n'uburebure bwa telefone iyariyo yose */
+    display: flex;
+    flex-direction: column; /* Ku ma telefone, inyandiko ije hejuru, ifoto hasi */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ikumira ibintu kurenga ku mpande */
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ibi bituma ifoto itanyurwa nabi naho telefone yaba ari ntoya */
+}
+img {
+    max-width: 100%;
+    height: auto; /* Ibi bituma ifoto itanyurwa nabi (aspect ratio iguma ari nziza) */
+    display: block;
+}
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px; /* Ibi bituma inyandiko zidatana ku nkombe z'izina rya telefone */
+    box-sizing: border-box; /* Ibi ni ingenzi cyane iyo ukoresha padding kuri 100% width */
+}
+/* Gukuraho zoom no kugumisa urubuga kuri 100% mu ma telefone yose */
+@media (max-width: 768px) {
+    html, body {
+        zoom: 100%; 
+        -webkit-transform: none;
+        transform: none;
+        
+        /* Ibi bintu bibiri ni ingenzi cyane kuri 100%: 
+           Biringira ko nta kintu na kimwe kirenga ifuremu y'izina rya telefone (No horizontal scrolling) */
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
