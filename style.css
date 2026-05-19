@@ -608,36 +608,48 @@ img {
     }
 }
 @media (max-width: 768px) {
-    /* 1. Gushyira amagambo y'imenyu hasi y'izina, cyangwa kuyagabanya ingano */
-    header, nav {
-        display: flex;
-        flex-direction: column; /* Ibi bituma logo ijoro hejuru, amagambo akaza hasi */
-        align-items: center;
-        gap: 10px;
-        padding: 15px 10px;
+    /* 1. Gabanya umutwe wose (Header) usesuye ube kuri 80% */
+    header {
+        zoom: 80% !important;
+        -webkit-transform: scale(0.80) !important;
+        transform: scale(0.80) !important;
+        transform-origin: top center !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important; /* Logo n'izina hejuru, menu hasi */
+        align-items: center !important;
+        gap: 10px !important;
+        padding: 10px 0 !important;
     }
 
-    /* 2. Gupaza utubuto tw'amagambo ngo twitonge neza twisanzuye */
+    /* 2. Menu y'amagambo - Itonde neza usesuye */
     .nav-links, nav ul {
-        display: flex;
-        flex-wrap: wrap; /* Niba amagambo areze, ahita yisunika akajya ku murongo mushya mu bwenge */
-        justify-content: center;
-        gap: 8px; /* Umwanya uri hagati y'ijambo n'irindi */
-        padding: 0;
-        margin: 0;
+        display: flex !important;
+        flex-direction: row !important; /* Amagambo agume ku murongo umwe */
+        flex-wrap: wrap !important; /* Niba akabije kwisunika, aze hasi mu mutuzo */
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 12px !important; /* Umwanya uri hagati y'ijambo n'irindi */
+        padding: 0 !important;
+        margin: 0 !important;
+        list-style: none !important;
     }
 
+    /* 3. Utujambo twa menu ubwatwo */
     nav ul li a, .nav-links a {
-        font-size: 0.75rem !important; /* Gabanya ubunini bw'inyandiko gake ngo bikwirwe */
-        letter-spacing: 0.5px;
+        font-size: 12px !important; /* Ingano nziza isomeka neza kuri 80% zoom */
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        white-space: nowrap !important; /* Birinda ko ijambo rimwe ryicamo kabiri */
     }
 
-    /* 3. Gupaza neza ya buto ya ESPACE CLIENT */
-    .button-espace-client, nav .btn {
-        margin-top: 5px;
-        font-size: 0.75rem !important;
-        padding: 8px 12px !important;
-        width: auto; /* Birinda ko iba nini cyane ikarenga impande */
-        text-align: center;
+    /* 4. Ya buto ya ESPACE CLIENT - Ize hasi y'amagambo yisanzuye */
+    .button-espace-client, nav .btn, header a[id*="client"], header a[class*="client"] {
+        display: inline-block !important;
+        margin-top: 5px !important;
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+        text-align: center !important;
+        width: auto !important;
     }
 }
