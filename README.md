@@ -1,45 +1,33 @@
-# 📸 Audry Nel Photographie — Galeries 
+# Audry Nel Photographie — Izuba ry'Amafoto Yacu
 
-> Urubuga rw'umwuga rwo kwerekana amafoto meza, utwumba tw'amafoto (galeries), n'uburyo bwo kwandikisha gahunda z'amafoto (sessions) kuri **Audry Nel Photographie**.
+Kaze neza kuri kigega cy'akadasohoka kibitse amashusho n'amafoto y'ubwiza butangaje bya **Audry Nel Photographie**. Uru ni urubuga rwubatswe neza ngo rubike kandi rwereke abakiriya bacu amafoto yabo mu buryo bugaragara neza kandi bwubashye.
 
-Aha niho hantu h'akadasohoka h'abakiriya bacu ngo barebe amafoto yabo mu buryo bwa *Premium*.
-
----
-
-## ✨ Ibiranga Urubuga (Features)
-
-* **Premium Dark Design:** Umukara n'izahabu (Black & Gold) bijyanye n'igihe n'ubwiza bw'amafoto.
-* **Fully Responsive:** Umwimerere witonze neza (100% scale) mu ma telefone yose n'ama-tablets.
-* **Custom Domain:** Urubuga ruri gukorera neza kuri `https://galeries.audrynel.com`.
-* **Espace Client Secure:** Urubuga rufite umutekano w'akadasohoka (HTTPS encrytped) ku bw'abakiriya bacu.
+Urubuga rwacu ubu ruri ku mugaragaro kuri: **[galeries.audrynel.com](https://galeries.audrynel.com)**
 
 ---
 
-## 🛠️ Ibikoresho Byakoreshejwe (Tech Stack)
+## Icyo uru rubuga ruriye (Ubwiza bwarwo)
 
-Hano hari ibikoresho n'ikoranabuhanga byifashishijwe mu kubaka uyu mushinga:
-
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/github%20pages-%23121011.svg?style=for-the-badge&logo=githubpages&logoColor=white)
-![Namecheap](https://img.shields.io/badge/Namecheap-%23DE3721.svg?style=for-the-badge&logo=namecheap&logoColor=white)
+* **Isura Ineye Umutane:** Amabara y'umukara n'izahabu (Black & Gold) twayatoranyije ngo ahure n'ubwiza n'ishema ry'ifoto nshya.
+* **Kwika neza mu Maso:** Twapaze urubuga mu buryo butuma n'iyo umuntu arogorera kuri telefone iyo ari yo yose (scale ya 100%), ibintu byose byitonda neza nta kibyigana.
+* **Umutekano n'Icyizere:** Abakiriya bacu bafite icyumba cyabo cy'umwihariko (Espace Client) gifite umutekano usesuye (HTTPS) ngo barebe amafoto yabo baserutse.
 
 ---
 
-## 🚀 Uko Twabikoze (Deployment Info)
+## Uko Twagize Ngw'Iruzi (Deployment)
 
-Uyu mushinga wamaze kwimurwa burundu:
-1.  **Hosting:** Waba u-hosted kuri **GitHub Pages** ku buntu ubuziraherezo.
-2.  **DNS Config:** Twashizeho umuyoboro wa **CNAME Record** muri **Namecheap Advanced DNS** yerekeza kuri `audrynelphotographie.github.io`.
-3.  **Security:** Umutekano wa SSL (HTTPS) urakora neza ijana ku ijana.
+Uyu mushinga twawonkeje kandi tuwugororera kuri **GitHub Pages** kugira ngo ugume uhora ku mugaragaro nta nkomyi. 
 
----
-
-## 📬 Twandikire (Contact)
-
-Niba ushaka gufata ifoto cyangwa ushaka ibindi bisobanuro, urashobora kuturyaho kuri:
-* **Urubuga:** [galeries.audrynel.com](https://galeries.audrynel.com)
-* **Instagram:** [@audrynelphotographie](https://instagram.com)
+Gahunda y'imiyoboro yose n'amakarita ya DNS byatunganyirijwe muri **Namecheap Advanced DNS** (binyuze kuri CNAME Record y'ukuri yerekeza kuri `audrynelphotographie.github.io`).
 
 ---
-<p align="center">Made with ❤️ by Audry Nel Photographie — © 2026 All Rights Reserved.</p>
+
+## Gushaka Gufata Ifoto?
+
+Niba ushaka ko tugufatira ifoto y'urwibutso, cyangwa niba ufite igitekerezo, urashobora kuturyaho bitworoheye:
+
+* **Urubuga rwacu:** [galeries.audrynel.com](https://galeries.audrynel.com)
+* **Urubuga rwa Instagram:** [@audrynelphotographie](https://instagram.com)
+
+---
+<p align="center">Bikozwe n'Umutima Mwiza na Audry Nel Photographie — © 2026 Imbago zose ni izacu.</p>
