@@ -183,7 +183,7 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 2.5% !important;
+  padding: 5px 2% !important; /* Cyagabanyijwe mu buhagarike n'mu mpande */
   width: 100% !important;
   max-width: 100%;
   box-sizing: border-box;
@@ -224,16 +224,16 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 1.5vw !important; /* Akanya gasimbuka n'ingano ya telefone */
+  gap: 1vw !important; /* Akanya kagabanyijwe gake */
   flex-shrink: 0;
 }
 
 .logo-container {
   position: relative;
-  width: 7.5vw !important;  /* Ingano ihwanye neza na telefone yose */
-  height: 7.5vw !important;
-  max-width: 32px;          /* Birinda ko iba nini cyane kuri desktop */
-  max-height: 32px;
+  width: 5.5vw !important;  /* Ingano y'uruziga yagabanyijwe kuryo bishika */
+  height: 5.5vw !important;
+  max-width: 25px;          
+  max-height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,8 +241,8 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
 }
 
 .nav-logo-img {
-  width: 80% !important;   /* Iguma rwagati mu mupaka */
-  height: 80% !important;
+  width: 100% !important;   /* Ifata mupaka wose w'akazu gatoranyijwe */
+  height: 100% !important;
   border-radius: 50%;
   object-fit: cover;
   z-index: 5;
@@ -261,11 +261,11 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
 }
 
 .logo-text {
-  font-size: 2.8vw !important; /* Inyandiko yisuganya neza nta gukwenda */
-  max-font-size: 13px;
+  font-size: 2.3vw !important; /* Inyandiko ya AUDRY NEL yagabanyijwe kuryo iba ntoya */
+  max-font-size: 11px;
   font-weight: 700; 
   color: #bfa372; 
-  letter-spacing: 0.2vw !important; 
+  letter-spacing: 0.1vw !important; 
   text-transform: uppercase; 
   white-space: nowrap !important;
   text-shadow: 0 0 10px rgba(191, 163, 114, 0.3);
@@ -281,7 +281,7 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2vw !important;       /* Umwanya ugenda ugabanuka iyo telefone ari ntoya */
+  gap: 1.5vw !important;     /* Akanya hagati y'amagambo kagabanyijwe */
   margin: 0 !important;
   padding: 0 !important;
   flex-wrap: nowrap !important; /* Bibuza amagambo kwicamo kabiri burundu */
@@ -296,7 +296,7 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
 .nav-links li a {
   color: #cccccc;
   text-decoration: none;
-  font-size: 2.2vw !important; /* Ifata ubugire fresh bukwira kuri telefone zose */
+  font-size: 1.8vw !important; /* Amagambo ya Menu yagizwe manyo cyane (Galerie, Services...) */
   text-transform: uppercase;
   white-space: nowrap !important;
   letter-spacing: 0.1vw;
@@ -308,10 +308,10 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
   align-items: center;
   justify-content: center;
   border: 1px solid #bfa372;
-  padding: 4px 1.8vw !important; /* Padding yisuganya neza */
+  padding: 3px 1.2vw !important; /* Agasanduku kitoheye neza cyane mu mupaka */
   text-decoration: none;
   color: #bfa372;
-  font-size: 2.1vw !important;  /* Inyandiko ntoya isobanutse nka menu */
+  font-size: 1.7vw !important;  /* Inyandiko ya ESPACE CLIENT yagizwe ntoya ihamye */
   font-weight: bold;
   white-space: nowrap !important;
   flex-shrink: 0;
