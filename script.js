@@ -104,3 +104,14 @@ document.querySelectorAll('a,button,.hsg-card,.mcard').forEach(el=>{el.addEventL
 // REVEAL
 const rvObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.1,rootMargin:'0px 0px -55px 0px'});
 document.querySelectorAll('.rv,.rvl').forEach(el=>rvObs.observe(el));
+window.addEventListener('scroll', function() {
+    const nav = document.getElementById('nav');
+    
+    // Niba umuntu adugije urutoki rimwe gusa (10px), glass animation ihita itangira
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      // Asubiriye hejuru gose ikavamo ikaba transparent
+      nav.classList.remove('scrolled');
+    }
+  });
