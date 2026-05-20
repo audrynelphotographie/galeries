@@ -183,132 +183,184 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 5%; /* Canke padding usanganywe */
+  padding: 10px 2.5% !important;
+  width: 100% !important;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 !important;
+
+  /* Bigumya nav hejuru */
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 9999 !important;
+
+  /* ITANGIRA ARI TRANSPARENT BURUNDU */
+  background-color: rgba(0, 0, 0, 0) !important;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px); /* Kuri iPhone */
+
+  /* GLASS ANIMATION: Ibi bituma iyo umuntu a-scrollaye, glass effect iza i-slide-inga neza */
+  transition: 
+    background-color 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
+    backdrop-filter 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
+    -webkit-backdrop-filter 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.5s ease;
 }
 
-.logo-wrap {
-  display: flex;
-  align-items: center; /* Bituma logo n'izina biba ku murongo umwe vertically */
-  text-decoration: none;
-  gap: 10px; /* Umwanya uri hagati ya logo n'izina */
+/* Iri tegeko rishiraho Glassmorphism Effect ihamye */
+#nav.scrolled {
+  background-color: rgba(10, 10, 10, 0.5) !important; /* Noir ibonerana gake nka glass */
+  backdrop-filter: blur(12px) !important;             /* Blur nini kuryo bishika */
+  -webkit-backdrop-filter: blur(12px) !important;     /* Kuri iPhone (Safari) */
+  
+  /* Akagingo k'umucu woroheje munsi ya nav (Glass border) */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
 }
 
-.nav-logo-img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid rgba(191, 163, 114, 0.4);
-}
-
-.logo-text {
-  font-size: 1.2rem; /* Sikiriza uko ushaka */
-  color: #fff; /* Ibara ry'izina ryawe */
-  white-space: nowrap;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
 .logo-wrap {
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 12px;
+  gap: 1.5vw !important; /* Akanya gasimbuka n'ingano ya telefone */
+  flex-shrink: 0;
 }
 
-.logo-text {
-  font-size: 1.3rem; 
-  font-weight: 700; 
-  color: #bfa372; /* Iri ni rya bara rya jaune/gold rimeze neza nka logo yawe */
-  letter-spacing: 1.5px; 
-  text-transform: uppercase; 
-  white-space: nowrap;
-  /* Glow yoroheje ituma izina ritera n'ishaka */
-  text-shadow: 0 0 10px rgba(191, 163, 114, 0.3);
-}
-
-.logo-text em {
-  font-style: italic;
-  color: #d4bc8d; /* "NEL" ndayigize jaune itandukanye gato kugira itoneke neza */
-}
 .logo-container {
   position: relative;
-  width: 40px; 
-  height: 40px;
+  width: 7.5vw !important;  /* Ingano ihwanye neza na telefone yose */
+  height: 7.5vw !important;
+  max-width: 32px;          /* Birinda ko iba nini cyane kuri desktop */
+  max-height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .nav-logo-img {
-  width: 32px;
-  height: 32px;
+  width: 80% !important;   /* Iguma rwagati mu mupaka */
+  height: 80% !important;
   border-radius: 50%;
   object-fit: cover;
   z-index: 5;
   position: absolute;
 }
 
-/* Uruzigi ruzunguruka ruhindura amabara */
+/* Uruzigi ruzunguruka ruhindura amabara (Rwagumye uko ubyifuza) */
 .rotating-border {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 2px solid transparent;
+  border: 1.5px solid transparent;
   z-index: 1;
-  /* Ibi bituma ruzunguruka kandi rugahindura ibara icyarimwe */
   animation: spin 1.5s linear infinite, colorShift 3s ease-in-out infinite;
 }
 
-/* Animation yo kuzunguruka */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.logo-text {
+  font-size: 2.8vw !important; /* Inyandiko yisuganya neza nta gukwenda */
+  max-font-size: 13px;
+  font-weight: 700; 
+  color: #bfa372; 
+  letter-spacing: 0.2vw !important; 
+  text-transform: uppercase; 
+  white-space: nowrap !important;
+  text-shadow: 0 0 10px rgba(191, 163, 114, 0.3);
+  flex-shrink: 0;
 }
 
-/* Animation yo guhindura amabara (Blanc -> Or -> Blanc) */
-@keyframes colorShift {
-  0%, 100% { 
-    border-top-color: #ffffff; /* Blanc */
-    border-right-color: #ffffff;
-    filter: drop-shadow(0 0 8px #ffffff);
-  }
-  50% { 
-    border-top-color: #bfa372; /* Or / Gold */
-    border-right-color: #bfa372;
-    filter: drop-shadow(0 0 12px #bfa372);
-  }
+.logo-text em {
+  font-style: italic;
+  color: #d4bc8d; 
 }
-/* Iyi niyo ituma Button yawe igira Glow yonyene */
+
+/* Amagambo ya Menu rwagati - Yatondetse neza ku murongo umwe */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2vw !important;       /* Umwanya ugenda ugabanuka iyo telefone ari ntoya */
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-wrap: nowrap !important; /* Bibuza amagambo kwicamo kabiri burundu */
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.nav-links li a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 2.2vw !important; /* Ifata ubugire fresh bukwira kuri telefone zose */
+  text-transform: uppercase;
+  white-space: nowrap !important;
+  letter-spacing: 0.1vw;
+}
+
+/* Button yawe igira Glow yonyene - Yatunganijwe ngo itaza kwisuka hanze */
 .nav-client-btn {
-  /* Ibi n'ibisanzwe uzi, twongereyeko Glow yonyene */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bfa372;
+  padding: 4px 1.8vw !important; /* Padding yisuganya neza */
+  text-decoration: none;
+  color: #bfa372;
+  font-size: 2.1vw !important;  /* Inyandiko ntoya isobanutse nka menu */
+  font-weight: bold;
+  white-space: nowrap !important;
+  flex-shrink: 0;
   box-shadow: 0 0 10px rgba(191, 163, 114, 0.4);
   animation: buttonGlow 2s infinite alternate;
   transition: all 0.3s ease;
 }
 
-/* Animation ituma iyo button "ihumeka" umuco (Glow) */
+/* Ibi n'ibyemezo by'ingano nini (Desktop) kugira ngo bitaza kuba binini cyane */
+@media (min-width: 768px) {
+  .logo-text { font-size: 13px !important; }
+  .nav-links li a { font-size: 10px !important; }
+  .nav-client-btn { font-size: 9.5px !important; padding: 6px 12px !important; }
+  .logo-container { width: 32px !important; height: 32px !important; }
+}
+
+/* ANIMATIONS ZAWE ZOSE Z'UMWIMERERE (ZAGUMYEHO) */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes colorShift {
+  0%, 100% { 
+    border-top-color: #ffffff; 
+    border-right-color: #ffffff;
+    filter: drop-shadow(0 0 4px #ffffff);
+  }
+  50% { 
+    border-top-color: #bfa372; 
+    border-right-color: #bfa372;
+    filter: drop-shadow(0 0 6px #bfa372);
+  }
+}
+
 @keyframes buttonGlow {
   0% {
-    box-shadow: 0 0 5px rgba(191, 163, 114, 0.3);
+    box-shadow: 0 0 4px rgba(191, 163, 114, 0.3);
     border-color: rgba(191, 163, 114, 0.5);
   }
   100% {
-    box-shadow: 0 0 18px rgba(191, 163, 114, 0.7), 0 0 5px #ffffff44;
+    box-shadow: 0 0 12px rgba(191, 163, 114, 0.7), 0 0 3px #ffffff44;
     border-color: #bfa372;
   }
 }
 
-/* Iyo ukozeho (Hover) */
 .nav-client-btn:hover {
   box-shadow: 0 0 25px rgba(191, 163, 114, 0.9);
-  transform: scale(1.02); /* Kanyeganyega gatoya gusa */
+  transform: scale(1.02); 
 }
 .contact-logo-wrap {
   display: flex;
@@ -730,4 +782,246 @@ html {
 /* ---------- Remove zoom hack on mobile (ibirinda ikibazo) ---------- */
 @media (max-width: 768px) {
   html { zoom: 1 !important; -moz-transform: none !important; }
+}
+/* 1. Umubiri mukuru wa Nav - Wagizwe muto cyane mu buhagarike */
+#nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    width: 100%;
+    max-width: 100%;
+    padding: 6px 6px;               /* Padding yagabanyijwe cyane hejuru n'munsi */
+    background-color: #000000;      
+    box-sizing: border-box;
+    overflow: hidden;               
+}
+
+/* 2. Uruhande rwa Logo - Rugabanyije */
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 4px;                       /* Unyura akanya gato */
+    flex-shrink: 0;                 
+}
+
+.logo-container {
+    width: 20px;                    /* Ruziga rwagizwe ruto cyane (20px) */
+    height: 20px;
+    position: relative;
+}
+
+.nav-logo-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 9.5px;               /* Inyandiko yagizwe ntoya */
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+/* 3. Amagambo ya Menu rwagati - Yegeranye neza */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;                       /* Amagambo yashize hafi y'ayandi (5px) */
+    flex-wrap: nowrap;              
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 7.5px;               /* Ingano ntoya cyane (7.5px) */
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* 4. Akabuto ka ESPACE CLIENT - Gato kandi gakingiye */
+.nav-client-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c5a880;      
+    padding: 3px 5px;               /* Agasanduku kagizwe gato cyane */
+    text-decoration: none;
+    color: #c5a880;
+    font-size: 7px;                 /* Inyandiko y'imbere ni 7px */
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;                 
+}
+/* 1. Umubiri mukuru wa Navigation */
+#nav {
+    display: flex;
+    justify-content: space-between; /* Bisaranganya Logo, Menu, n'Akabuto mu mpande neza */
+    align-items: center;            /* Bituma byose biba ku murongo umwe ugororotse neza */
+    width: 100%;
+    max-width: 100%;
+    padding: 8px 10px;              /* Umwanya usobanutse hejuru n'munsi */
+    background-color: #000000;
+    box-sizing: border-box;
+    overflow: hidden;               /* Birinda désordre yose */
+}
+
+/* 2. Uruhande rwa Logo (Ibumoso) */
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 6px;
+    flex-shrink: 0;                 /* Birinda ko logo ihenebereye */
+}
+
+.logo-container {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.nav-logo-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;            /* Birinda izina kwicamo kabiri */
+}
+
+/* 3. Amagambo ya Menu (Rwagati) - Ibi nibyo bikura wa muvuduko mubi */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;                      /* Akanya gasobanutse hagati y'amagambo */
+    flex-wrap: nowrap;              /* ICYINGENZI: Ibi mbibuza À PROPOS kujya mu mirongo ibiri */
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 8.5px;               /* Ingano fresh ikwira kuri telefone zose */
+    text-transform: uppercase;
+    white-space: nowrap;            /* Birinda ko ijambo rikatika */
+    letter-spacing: 0.5px;
+}
+
+/* 4. Akabuto ka ESPACE CLIENT (Iburyo) */
+.nav-client-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c5a880;      /* Umurongo w'izahabu */
+    padding: 5px 8px;               /* Padding ntoya cyane yabujije amagambo kurenga */
+    text-decoration: none;
+    color: #c5a880;
+    font-size: 8px;                 /* Ingano ituma ESPACE CLIENT iguma ku murongo umwe */
+    font-weight: bold;
+    white-space: nowrap;            /* ICYINGENZI: Ibi mbibuza ESPACE CLIENT kwicamo kabiri hasi n'hejuru */
+    flex-shrink: 0;                 /* Birinda ko aka gashingo kabyigana */
+}
+
+.nav-client-btn span {
+    white-space: nowrap;            /* Bikomeza gushimangira ko inyandiko iguma hamwe */
+}
+/* 1. Umubiri mukuru wa Navigation */
+#nav {
+    display: flex;
+    justify-content: space-between; /* Isaranganya Logo, Menu, n'Akabuto mu mpande neza */
+    align-items: center;            /* Bituma byose biba ku murongo umwe ugororotse */
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 10px;             /* Padding yongerewe gake hejuru n'munsi kugira ngo hahumeke */
+    background-color: #000000;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* 2. Uruhande rwa Logo (Ibumoso) */
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.logo-container {
+    width: 25px;                    /* Ingano y'uruziga rwa logo */
+    height: 25px;
+    position: relative;
+}
+
+.nav-logo-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;                /* Ingano fresh y'izina AUDRY NEL */
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* 3. Amagambo ya Menu (Rwagati) - Yongerewe ingano gake bishishe */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 12px;                      /* Akanya gasobanutse neza hagati y'amagambo */
+    flex-wrap: nowrap;              /* Bibuza amagambo kwicamo kabiri */
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #cccccc;                 /* Urwera rwayo rwayongerewe umucyo gake */
+    text-decoration: none;
+    font-size: 10px;                /* Yongerewe kuva kuri 8px gushika kuri 10px kuko yari mato cyane */
+    text-transform: uppercase;
+    white-space: nowrap;            /* Birinda ko ijambo rikatika */
+    letter-spacing: 0.8px;          /* Espace hagati y'inyandiko nk'uko bimeze ku foto */
+}
+
+/* 4. Akabuto ka ESPACE CLIENT (Iburyo) */
+.nav-client-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c5a880;      /* Wa murongo w'izahabu */
+    padding: 6px 12px;              /* Kakozwe neza gafite ubugari buhagije */
+    text-decoration: none;
+    color: #c5a880;
+    font-size: 9.5px;               /* Yongerewe kugira ngo inyandiko isomeke neza */
+    font-weight: bold;
+    white-space: nowrap;            /* Ibigumya ku murongo umwe burundu */
+    flex-shrink: 0;
+    letter-spacing: 0.5px;
 }
