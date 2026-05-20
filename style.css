@@ -556,4 +556,18 @@ footer p{font-size:.6rem;letter-spacing:.08em;color:var(--dim);font-weight:300}
   color: #444;
   margin: 0 10px;
 }
+html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden; /* Ikuraho burundu scroll y'iburyo n'ibumoso */
+            overflow-y: auto;   /* Imyemerera gushika hasi n'hejuru nta kibazo */
+            margin: 0;
+            padding: 0;
+        }
 
+        /* Ibi bifata page yose uyigabanye kuri 95% neza na neza */
+        body {
+            zoom: 0.95; 
+            -moz-transform: scale(0.95); 
+            -moz-transform-origin: top center;
+        }
