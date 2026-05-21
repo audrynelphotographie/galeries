@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+   <title>Audry Nel Photography | Nos Galerie</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Audry Nel Galeries",
+      "url": "https://galeries.audrynel.com/"
+    }
+    </script>
+   <meta name="description" content="Audry Nel, Audry Nel Photography,Phot9grapher Burundi, umufotozi Gitega,umufotographe,Photographer,+257,photo gitega,photographe Burundi, photographe Gitega, meilleur photographe Burundi, amafoto y'ubukwe Burundi, wedding photography Burundi, event photographer Gitega, portrait photography Burundi, photographie professionnelle Burundi, photo bujumbura,Drone burundi,drone gitega.">
+    <meta property="og:title" content="Audry Nel Photography | Nos Galerie">
+    <meta property="og:description" content="Access your private gallery.">
+    <meta property="og:image" content="https://galeries.audrynel.com/logo.jpg">
+    <meta property="og:url" content="https://galeries.audrynel.com/">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/jpg" href="logo1.jpg">
+    <link rel="apple-touch-icon" href="logo1.jpg">
+        <meta name="apple-mobile-web-app-title" content="Audry Nel">
+    <meta name="application-name" content="Audry Nel Galeries">
+    <link rel="icon" href="icon.jpg" type="image/jpeg">
+     <link rel="apple-touch-icon" href="icon.jpg">
+     
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<div class="lb" id="lb">
+  <button class="lb-x" onclick="closeLB()">✕</button>
+  <button class="lb-arr lb-prv" onclick="moveLB(-1)">‹</button>
+  <img src="" id="lb-img" alt="">
+  <button class="lb-arr lb-nxt" onclick="moveLB(1)">›</button>
+  <div class="lb-foot"><span class="lb-name" id="lb-name"></span><span class="lb-ct" id="lb-ct"></span></div>
+</div>
+<nav id="nav">
+  <a href="#" class="logo-wrap">
+    <div class="logo-container">
+      <div class="rotating-border"></div>
+      <img src="https://i.ibb.co/9HRHHgxQ/logo1.jpg" alt="Logo" class="nav-logo-img">
+    </div>
+    <span class="logo-text">AUDRY <em>NEL</em></span>
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#galerie" class="nav-link-item">Galerie</a></li>
+    <li><a href="#services" class="nav-link-item">Services</a></li>
+    <li><a href="#about" class="nav-link-item">À Propos</a></li>
+    <li><a href="#contact" class="nav-link-item">Contact</a></li>
+    <li class="nav-mobile-client"><a href="https://audrynel.com/" target="_blank">🔒 Espace Client</a></li>
+  </ul>
+
+  <a href="https://audrynel.com/" class="nav-client-btn" target="_blank">
+    <span>🔒 ESPACE CLIENT →</span>
+  </a>
+
+  <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<section class="hero">
+  <div class="hero-left">
+    <p class="h-tag">Welcome to Professionnel Photographe</p>
+    <h1 class="hero-h1">Audry<em>Nel Photographe</em></h1>
+    <p class="hero-desc">Portrait · Mode · Éditorial · Commercial.<br>Des images qui capturent l'essence, la lumière et l'émotion de chaque instant.</p>
+    <div class="hero-ctas">
+      <a href="#galerie" class="cta-main">Découvrir Nos Photos→</a>
+      <a href="#contact" class="cta-ghost">Réserver une Séance</a>
+      <a href="https://audrynel.com/" class="cta-client-link" target="_blank">🔒 Espace Client — Accéder à vos photos →</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://i.ibb.co/C3bGxgzP/MG-0754.jpg" alt="Audry Nel Photography" loading="eager">
+  </div>
+  <div class="hero-hint"><div class="hint-bar"></div><span>Défiler</span></div>
+</section>
+
+<div class="mq-wrap"><div class="mq-inner" id="mq"></div></div>
+
+<div class="hsg" id="galerie">
+  <div class="hsg-top">
+    <div class="hsg-top-l">
+      <p class="lbl">Collection Signature</p>
+      <h2>Moments <em>Capturés</em></h2>
+    </div>
+    <span class="hsg-hint">Glissez pour explorer →</span>
+  </div>
+  <div class="hsg-track" id="hsgTrack"></div>
+</div>
+
+<section class="mgrid">
+  <div class="mgrid-top">
+    <div class="mgrid-top-l">
+      <p class="lbl">Portfolio Complet</p>
+      <h2>Toutes les <em>Œuvres</em></h2>
+    </div>
+    <div class="filt">
+      <button class="fb on" data-f="all">Tout</button>
+      <button class="fb" data-f="portrait">Portrait</button>
+      <button class="fb" data-f="mode">Mode</button>
+      <button class="fb" data-f="editorial">Éditorial</button>
+    </div>
+  </div>
+  <div class="mwall" id="mwall"></div>
+</section>
+
+<div class="cport" id="espace-client">
+  <div class="cport-inner">
+    <div class="cport-left rv">
+      <p class="lbl">Espace Privé</p>
+      <h2>Vos Photos <em>Vous Attendent</em></h2>
+      <p>Vous avez eu une séance photo avec Audry Nel ? Accédez à votre galerie personnelle et téléchargez toutes vos photos en haute résolution sur <strong style="color:var(--text)">audrynel.com</strong>.</p>
+      <a href="https://audrynel.com/" class="cport-btn" target="_blank">🔒 Accéder à mes Photos →</a>
+      <span class="cport-note">audrynel.com · Accès sécurisé</span>
+    </div>
+<div class="cport-right rv">
+      <div class="cport-img"><img src="https://i.ibb.co/DDrqWbCP/1.jpg" loading="lazy" alt=""><div class="cport-lock"><div class="cport-lock-i">🔒</div><div class="cport-lock-t">Privé</div></div></div>
+      <div class="cport-img"><img src="https://i.ibb.co/wF1sjKFM/14.jpg" loading="lazy" alt=""><div class="cport-lock"><div class="cport-lock-i">🔒</div><div class="cport-lock-t">Privé</div></div></div>
+      <div class="cport-img"><img src="https://i.ibb.co/rR1h345P/13.jpg" loading="lazy" alt=""><div class="cport-lock"><div class="cport-lock-i">🔒</div><div class="cport-lock-t">Privé</div></div></div>
+    </div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="about-in">
+    <div class="rvl">
+      <div class="about-imgwrap">
+        <div class="about-frame"></div>
+        <img src="https://i.ibb.co/rGBCN502/logo.webp" alt="Audry Nel" loading="lazy">
+        <div class="about-ghost">AN</div>
+      </div>
+    </div>
+    <div class="about-txt rv">
+      <p class="lbl">Mon Histoire</p>
+      <h2>L'Art de <em>Saisir</em> l'Essentiel</h2>
+      <p>Avec plus de <strong>4ans d'expérience</strong> dans la photographie professionnelle, je me suis spécialisé dans l'art du portrait et de la mode, capturant l'essence unique de chaque individu.</p>
+      <p>Mon approche combine une <strong>technique maîtrisée</strong> avec une sensibilité artistique profonde qui transforme chaque session en expérience mémorable.</p>
+      <p>Collaborateur régulier de <strong>grandes marques</strong> et magazines de mode internationaux.</p>
+      <div class="about-stats">
+        <div><div class="stn">2+</div><div class="stl">Années</div></div>
+        <div><div class="stn">850+</div><div class="stl">Clients</div></div>
+        <div><div class="stn">5</div><div class="stl">Awards</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="svc-head rv"><p class="lbl">Ce que je Propose</p><h2>Mes <em>Services</em></h2></div>
+  <div class="svc-grid rv">
+    <div class="svc-card"><div class="svc-num">01</div><div class="svc-name">Portrait Studio</div><p class="svc-desc">Session portrait en studio avec éclairage professionnel. Idéal pour profils LinkedIn, CV créatifs ou portraits artistiques personnels.</p><div class="svc-price">À partir de 100.000fbu/ 2h</div></div>
+    <div class="svc-card"><div class="svc-num">02</div><div class="svc-name">Mode & Éditorial</div><p class="svc-desc">Shootings mode pour collections, lookbooks ou éditoriaux magazine. Collaboration avec stylistes et maquilleurs professionnels.</p><div class="svc-price">À partir de 500.000fbu / jour</div></div>
+    <div class="svc-card"><div class="svc-num">03</div><div class="svc-name">Campagne Commerciale</div><p class="svc-desc">Production complète pour vos campagnes publicitaires, réseaux sociaux ou catalogues produits. Du concept à la livraison finale.</p><div class="svc-price">Sur devis personnalisé</div></div>
+  </div>
+<section class="v-highlights" id="highlights">
+  <div class="v-highlights-in rv">
+    <div class="v-head">
+      <p class="lbl">Cinematography</p>
+      <h2>Video <em>Highlights</em></h2>
+    </div>
+    
+    <div class="v-content">
+      <div class="v-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/jHyhNTJit9Y" 
+          title="Audry Nel Photography Highlights" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+      <div class="v-caption-wrap">
+        <p class="v-text">Capturer l'émotion à travers le mouvement.</p>
+        <div class="v-gold-bar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="contact-in rv">
+    <div class="contact-logo-wrap">
+      <img src="https://i.ibb.co/9HRHHgxQ/logo1.jpg" alt="Logo Audry Nel" class="contact-logo-img">
+    </div>
+    
+    <p class="lbl">Travaillons Ensemble</p>
+    <h2>Votre Vision,<br><em>Notre Histoire</em></h2>
+    <p>Vous avez un projet ? Que ce soit pour un portrait, une campagne commerciale ou un éditorial mode, contactez-moi pour en discuter.</p>
+    <div class="contact-row">
+      <a href="https://wa.me/25762652177" class="cta-main">Envoyer un Message</a>
+      <a href="https://audrynel.com/" class="cta-ghost" target="_blank">🔒 Espace Client →</a>
+    </div>
+  </div>
+  
+</section>
+
+<div class="contact-divider">
+  <div class="divider-line"></div>
+  <p class="divider-text">Contactez-moi directement</p>
+  <div class="divider-line"></div>
+</div>
+
+<div class="soc">
+  <p class="lbl">Suivez le Portfolio</p>
+  <ul class="soc-links">
+    <li><a href="https://www.facebook.com/Audrynel257" class="s-fb" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+    <li><a href="https://www.instagram.com/audry_nel?igsh=MW1tYmRvZ3dzOHZlcw==" class="s-ig" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+    <li><a href="https://www.tiktok.com/@audrynel?_r=1&_d=ei7640aji25hle&sec_uid=MS4wLjABAAAAmZmmbYqLooI4lBtQP3fX-dPPgnB4a8Z8z0Mc8Cz8dubktKbP3BovHTa4KWSK1CGw&share_author_id=7080236457529263110&sharer_language=fr&source=h5_m&u_code=e11kha6j8malab&timestamp=1778834179&user_id=7080236457529263110&sec_user_id=MS4wLjABAAAAmZmmbYqLooI4lBtQP3fX-dPPgnB4a8Z8z0Mc8Cz8dubktKbP3BovHTa4KWSK1CGw&item_author_type=1&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7637060029501720328&share_link_id=1618bfce-b473-4bbc-af68-3610efd1c313&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b5836%2Cb7360&social_share_type=5&enable_checksum=1" class="s-tk" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
+    <li><a href="https://youtube.com/@audrynel?si=kx0OpudDyOXKSUOx" class="s-yt" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+    <li><a href="https://www.linkedin.com/in/audry-nel-76a4413b3?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="s-ln" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+    <li><a href="https://www.threads.com/@audry_nel" class="s-th" target="_blank"><i class="fab fa-threads"></i> Threads</a></li>
+  <footer class="main-footer">
+  <div class="footer-content">
+    <p class="f-copy">© 2026 AUDRY <em>NEL</em> PHOTOGRAPHIE — TOUS DROITS RÉSERVÉS</p>
+    <p class="f-info">
+      <a href="https://audrynel.com" target="_blank">audrynel.com</a> 
+      <span class="f-sep">·</span> 
+      <a href="tel:+25762652177">CONTACT@+25762652177</a>
+    </p>
+  </div>
+</footer>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</body>
+</html>
