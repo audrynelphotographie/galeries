@@ -8,6 +8,66 @@ const PHOTOS = [
   {u:"https://i.ibb.co/pvkBYNmK/wedding9.jpg", c:"wedding", n:"Wedding Day 9"},
   {u:"https://i.ibb.co/23cKKB5X/wedding7.jpg", c:"wedding", n:"Wedding Day 7"},
   {u:"https://i.ibb.co/nq8CWGbt/49.jpg", c:"portrait", n:"Portrait 49"},
+  {
+    u: "https://i.ibb.co/gM3v8fk8/MG-8934-2.jpg", 
+    c: "wedding", 
+    n: "Wedding 1", 
+    alt: "Photographie de mariage à Gitega par Audry Nel - Couple marié et élégant"
+  },
+  {
+    u: "https://i.ibb.co/zWjbfxy2/12-2.jpg", 
+    c: "fashion", 
+    n: "Fashion 1", 
+    alt: "Photo de mode et haute couture à Bujumbura par Audry Nel"
+  },
+  {
+    u: "https://i.ibb.co/WWmwjf7N/6.jpg", 
+    c: "fashion", 
+    n: "Fashion 2", 
+    alt: "Séance photo éditoriale et style moderne - Photographe Gitega Audry Nel"
+  },
+  {
+    u: "https://i.ibb.co/whdksCFh/IMG-0971-2.jpg", 
+    c: "fashion", 
+    n: "Fashion 3", 
+    alt: "Portrait de mode haut de gamme en studio à Bujumbura par Audry Nel"
+  },
+  {
+    u: "https://i.ibb.co/hJG1JYZQ/IMG-0994-2.jpg", 
+    c: "fashion", 
+    n: "Fashion 4", 
+    alt: "Shooting photo créatif et tendance - Photographe professionnel Burundi"
+  },
+  {
+    u: "https://i.ibb.co/NdyMkpt4/IMG-6690-2.jpg", 
+    c: "wedding", 
+    n: "Wedding 2", 
+    alt: "Reportage photo mariage à Bujumbura - Moment émotion par Audry Nel"
+  },
+  {
+    u: "https://i.ibb.co/SXq2n69d/IMG-9703-1-1.jpg", 
+    c: "wedding", 
+    n: "Wedding 3", 
+    alt: "Photographie de mariage professionnel à Gitega - Audry Nel"
+  },
+  {
+    u: "https://i.ibb.co/CptkXpW2/wedding12-2.jpg", 
+    c: "wedding", 
+    n: "Wedding 4", 
+    alt: "Cérémonie de mariage et échange des alliances - Photographe Gitega"
+  },
+  {
+    u: "https://i.ibb.co/tMZWdvpn/wedding4-2.jpg", 
+    c: "wedding", 
+    n: "Wedding 5", 
+    alt: "Entrée des mariés dans la salle de réception - Photo mariage Bujumbura"
+  },
+  {
+    u: "https://i.ibb.co/PsdfnSMv/wedding5-2.jpg", 
+    c: "wedding", 
+    n: "Wedding 6", 
+    alt: "Plus belles photos de mariage au Burundi par Audry Nel Photographie"
+  },
   {u:"https://i.ibb.co/qF9mTB7L/33.jpg", c:"portrait", n:"Portrait 33"},
   {u:"https://i.ibb.co/0jKMyJkn/32.jpg", c:"portrait", n:"Portrait 32"},
   {u:"https://i.ibb.co/8DBqmhTP/23.jpg", c:"portrait", n:"Portrait 23"},
