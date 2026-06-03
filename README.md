@@ -1,4 +1,4 @@
-# Audry Nel Galeries 
+# Audry Nel  | Galeries 
 Professional Photographer in Burundi & visiter galeries photos.
 
 📸 **Portfolio:** [Visit Website](https://galeries.audrynel.com/)
